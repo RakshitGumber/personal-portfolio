@@ -4,15 +4,16 @@
 
 @font-face {
   font-family: "codenext";
-  src: url("/assets/CodeNext-ExtraBold.woff");
+  src: url("/assets/fonts/CodeNext-ExtraBold.woff");
 }
 
 :root {
   --primary-background: black;
-  --secondary-background: #181823;
+  --secondary-background: rgba(24, 24, 35, 0.75);
   --primary-heading: darkslategray;
   --primary-text: white;
   --accent: #5221e6;
+  --hover: #242431;
 }
 
 * {
@@ -24,4 +25,14 @@
 
 body {
   background-color: var(--primary-background);
+}
+
+.follow-blob {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(32, 105, 241, 0.2);
 }
