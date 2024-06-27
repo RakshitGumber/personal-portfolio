@@ -1,38 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "./navigation.css";
+@import "./marker.css";
+@import "./scrollbar.css";
 
-@import url("./navigation.css");
-
-@font-face {
-  font-family: "codenext";
-  src: url("/assets/fonts/CodeNext-ExtraBold.woff");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  --primary-background: black;
-  --secondary-background: rgba(24, 24, 35, 0.75);
-  --primary-heading: darkslategray;
-  --primary-text: white;
-  --accent: #5221e6;
-  --hover: #242431;
+  background-color: #1a1527;
+  color: white;
+  font-family: "Roboto", sans-serif;
+
+  --secondary-background: #100e17;
+  --primary-color: #6366f1;
+  --dark-text: #52525b;
+  --light-dark: #9ca3af;
+  --accent: #e11d48;
+  overflow-x: hidden;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "cabin";
-}
-
-body {
-  background-color: var(--primary-background);
-}
-
-.follow-blob {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  height: 100px;
-  width: 100px;
-  background-color: rgba(32, 105, 241, 0.2);
+a {
+  color: currentColor;
+  text-decoration: none;
 }
