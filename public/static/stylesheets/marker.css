@@ -21,7 +21,7 @@
   top: 6px;
   left: 6px;
   width: 2px;
-  height: 2000px;
+  height: 2200px;
   background-color: var(--primary-color);
 }
 
@@ -41,10 +41,21 @@
 .marker-checkpoint {
   position: absolute;
   left: 2px;
-  top: 300px;
   width: 10px;
   height: 2px;
   background: var(--primary-color);
+}
+
+.marker-checkpoint[data-key="1"] {
+  top: 300px;
+}
+
+.marker-checkpoint[data-key="2"] {
+  top: 850px;
+}
+
+.marker-checkpoint[data-key="3"] {
+  top: 1825px;
 }
 
 .marker-start:hover {

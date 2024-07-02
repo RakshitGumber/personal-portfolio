@@ -1,0 +1,29 @@
+#contact {
+  position: relative;
+}
+
+#contact .section-heading {
+  position: absolute;
+  left: 15vw;
+  top: 640px;
+}
+
+.contact-details {
+  width: 80vw;
+  height: 200px;
+  background-color: var(--secondary-background);
+  position: absolute;
+  top: 700px;
+  left: 10vw;
+  z-index: 10;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 24px;
+  color: var(--light-dark);
+}
+
+.contact-details span {
+  color: var(--dark-text);
+}

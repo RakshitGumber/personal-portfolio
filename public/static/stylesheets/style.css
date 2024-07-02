@@ -5,6 +5,9 @@
 @import "./scrollbar.css";
 @import "./hero.css";
 @import "./work.css";
+@import "./about.css";
+@import "./contact.css";
+@import "./footer.css";
 
 * {
   padding: 0;

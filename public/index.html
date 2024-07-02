@@ -14,10 +14,9 @@
       <ul class="nav-list">
         <li class="nav-item"><a href="#work">Work</a></li>
         <li class="nav-item">
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
-        <li class="nav-item"><a href="#">Podcast</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section class="hero">
@@ -51,14 +50,56 @@
       <h1 class="section-heading">&lt; Work /&gt;</h1>
       <div class="sub-section">
         <h1 class="sub-section-heading">Projects</h1>
+        <div class="projects">
+          <article class="project">
+            <a href="https://unpopularapp.netlify.app/" target="blank">
+              <img
+                src="/assets/images/unpopular.png"
+                alt="Unpopular"
+                data-tilt
+                data-tilt-glare
+                data-tilt-max-glare="0.8"
+                data-tilt-scale="1.1"
+              />
+            </a>
+            <div>
+              <h2 class="project-name">Unpopular</h2>
+              <span class="serial-number">01</span>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="projects">
-        <article class="project">
-          <img src="/assets/images/unpopular.png" alt="Unpopular" />
-          <h2 class="project-name">Unpopular</h2>
-          <hr />
-          <span class="serial-number">01</span>
+    </section>
+
+    <section id="about">
+      <h1 class="section-heading">&lt; About /&gt;</h1>
+      <div class="sub-section">
+        <h1 class="sub-section-heading">About Me</h1>
+        <article class="about-container">
+          <h1>My name is Rakshit Gumber</h1>
+          <span>
+            I am an Enthusiastic Web-developer. Proficient with core web
+            languages like HTML, CSS, JS. Also Experienced with web frameworks
+            like React and backend technology like MongoDB, NodesJS and Express
+          </span>
+          <div class="actions">
+            <button>
+              <a href="https://flowcv.com/resume/2ne6kk9j4f" target="_blank"
+                >Download Resume</a
+              >
+            </button>
+            <button><a href="#contact">Contact</a></button>
+          </div>
         </article>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="section-heading">&lt; Contact /&gt;</h1>
+      <div class="contact-details">
+        <h2>Email:</h2>
+        <span>gumberrakshit@gmail.com</span>
+        <h2>Mobile:</h2>
+        <span>+91 9654433977</span>
       </div>
     </section>
 
@@ -66,16 +107,23 @@
       <div class="marker-line"></div>
       <div class="marker-start"></div>
       <span class="marker-indication">Scroll</span>
-      <div class="marker-checkpoint"></div>
+      <div class="marker-checkpoint" data-key="1"></div>
+      <div class="marker-checkpoint" data-key="2"></div>
+      <div class="marker-checkpoint" data-key="3"></div>
     </div>
+
+    <footer class="main-footer">
+      <h2>Created by Rakshit Gumber</h2>
+    </footer>
+
     <!-- <div class="cursor-box"></div> -->
 
-    <script src="/assets/scripts/index.js" type="module"></script>
     <script
       src="https://kit.fontawesome.com/763dcc59d8.js"
       crossorigin="anonymous"
     ></script>
     <script src="/assets/scripts/particles.js-master/particles.js"></script>
     <script src="/assets/scripts/particles.js-master/demo/js/app.js"></script>
+    <script src="/assets/scripts/tilt/index.js"></script>
   </body>
 </html>
