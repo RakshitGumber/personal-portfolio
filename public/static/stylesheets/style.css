@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
 @import "./navigation.css";
 @import "./marker.css";
 @import "./scrollbar.css";
+@import "./hero.css";
+@import "./work.css";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -25,4 +32,13 @@
 a {
   color: currentColor;
   text-decoration: none;
+}
+
+.cursor-box {
+  border: 1px solid var(--light-dark);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: none;
+  border-radius: 50%;
 }

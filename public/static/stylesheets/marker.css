@@ -1,7 +1,7 @@
 .marker {
   position: absolute;
-  left: 15vw;
-  top: 70vh;
+  left: 12vw;
+  top: 75vh;
 }
 
 .marker-start {
@@ -13,7 +13,7 @@
   border-radius: 50%;
   border: 2px solid var(--primary-color);
   position: absolute;
-  transition: all 400ms ease;
+  transition: all 300ms ease;
 }
 
 .marker-line {
@@ -34,12 +34,14 @@
   font-size: 1rem;
   font-weight: bold;
   transform: rotate(-90deg);
+  transition: all 300ms ease;
+  user-select: none;
 }
 
 .marker-checkpoint {
   position: absolute;
   left: 2px;
-  top: 500px;
+  top: 300px;
   width: 10px;
   height: 2px;
   background: var(--primary-color);
@@ -48,4 +50,8 @@
 .marker-start:hover {
   width: 26px;
   height: 26px;
+}
+
+.marker-start:hover ~ .marker-indication {
+  top: 3.5rem;
 }
